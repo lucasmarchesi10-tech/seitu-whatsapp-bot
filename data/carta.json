@@ -1,0 +1,360 @@
+{
+  "_instrucciones": "Cargá los precios como números sin $ ni puntos (ej: 3500). Si un precio está en null, el bot NO lo dice y deriva la consulta a una persona. 'precios' se usa para productos con tamaños.",
+  "categorias": [
+    {
+      "nombre": "Cafetería",
+      "items": [
+        {
+          "nombre": "Café Americano",
+          "precios": {
+            "Doble": null,
+            "Jarrito": null
+          }
+        },
+        {
+          "nombre": "Café con Leche",
+          "precios": {
+            "Doble": null,
+            "Jarrito": null
+          }
+        },
+        {
+          "nombre": "Cortado",
+          "precios": {
+            "Doble": null,
+            "Jarrito": null
+          }
+        },
+        {
+          "nombre": "Lágrima",
+          "precios": {
+            "Doble": null,
+            "Jarrito": null
+          }
+        },
+        {
+          "nombre": "Capuchino",
+          "precios": {
+            "Doble": null,
+            "Jarrito": null
+          }
+        },
+        {
+          "nombre": "Latte Saborizado",
+          "precios": {
+            "Doble": null,
+            "Jarrito": null
+          }
+        },
+        {
+          "nombre": "Submarino",
+          "precios": {
+            "Doble": null,
+            "Jarrito": null
+          }
+        },
+        {
+          "nombre": "Chocolatada",
+          "precios": {
+            "Doble": null,
+            "Jarrito": null
+          }
+        }
+      ]
+    },
+    {
+      "nombre": "Fríos",
+      "items": [
+        {
+          "nombre": "Iced Americano",
+          "descripcion": "2 shots de café + agua, con hielo.",
+          "precios": {
+            "Grande": null,
+            "Mediano": null
+          }
+        },
+        {
+          "nombre": "Iced Coffee",
+          "descripcion": "2 shots de café + leche espumada, con hielo.",
+          "precios": {
+            "Grande": null,
+            "Mediano": null
+          }
+        }
+      ]
+    },
+    {
+      "nombre": "Especiales y proteicos",
+      "items": [
+        {
+          "nombre": "Iced Special Sei Tu",
+          "descripcion": "2 shots de café + leche espumada + syrup a elección, con hielo.",
+          "precio": null,
+          "destacado": true
+        },
+        {
+          "nombre": "Iced Latte Pistacho",
+          "descripcion": "Café con leche espumada y toque de pistacho, con hielo.",
+          "precio": null
+        },
+        {
+          "nombre": "Banana Boost Sei Tu",
+          "descripcion": "2 shots de café + leche espumada + banana + proteína.",
+          "precio": null,
+          "destacado": true
+        },
+        {
+          "nombre": "Iced Latte Proteico",
+          "descripcion": "2 shots de café + leche espumada + proteína.",
+          "precio": null
+        },
+        {
+          "nombre": "Orange Coffee",
+          "descripcion": "Café con toque de naranja, con hielo.",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "nombre": "Tés e infusiones",
+      "items": [
+        {
+          "nombre": "Té Inti Zen",
+          "descripcion": "Selección de tés en hebras, a elección de la casa.",
+          "precio": null
+        },
+        {
+          "nombre": "Té de Verano",
+          "descripcion": "Té frío Inti Zen con hielo, fresco y liviano.",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "nombre": "Jugos y opciones saludables",
+      "items": [
+        {
+          "nombre": "Naranja Exprimida",
+          "precio": null
+        },
+        {
+          "nombre": "Limonada",
+          "precio": null
+        },
+        {
+          "nombre": "Pomelada",
+          "precio": null
+        },
+        {
+          "nombre": "Especial de Temporada",
+          "descripcion": "Fruta de estación, elegida por la casa.",
+          "precio": null
+        },
+        {
+          "nombre": "Jugo Vital",
+          "descripcion": "Zanahoria + jengibre + manzana. Un shot de energía natural.",
+          "precio": null
+        },
+        {
+          "nombre": "Yogurt Natural con Granola y Frutas",
+          "descripcion": "Yogurt natural, granola casera y frutas frescas de estación.",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "nombre": "Salados",
+      "items": [
+        {
+          "nombre": "Tostón Sei Tu",
+          "descripcion": "Queso crema + palta + huevo (revuelto o a la plancha) + tomate cherry + aceite de oliva + semillas.",
+          "precio": null,
+          "destacado": true
+        },
+        {
+          "nombre": "Tostón Serrano Sei Tu",
+          "descripcion": "Queso crema + jamón crudo + rúcula + tomate cherry + mix de semillas.",
+          "precio": null,
+          "destacado": true
+        },
+        {
+          "nombre": "Tostadas con Mermelada y Queso Crema",
+          "descripcion": "Clásicas y simples, ideales para acompañar la infusión.",
+          "precio": null
+        },
+        {
+          "nombre": "Criollos",
+          "descripcion": "Facturas saladas, tradicionales.",
+          "precio": null
+        },
+        {
+          "nombre": "Medialuna de Jamón y Queso",
+          "descripcion": "Medialuna rellena con jamón y queso.",
+          "precio": null
+        },
+        {
+          "nombre": "Chipa (100 g)",
+          "descripcion": "Chipa recién horneada.",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "nombre": "Dulce y pastelería",
+      "items": [
+        {
+          "nombre": "Medialunas",
+          "descripcion": "Clásicas de manteca.",
+          "precio": null
+        },
+        {
+          "nombre": "Cookies",
+          "descripcion": "Consultar variedad del día.",
+          "precio": null
+        },
+        {
+          "nombre": "Alfajor Sei Tu",
+          "descripcion": "Receta propia de la casa.",
+          "precio": null,
+          "destacado": true
+        },
+        {
+          "nombre": "Medialunas para llevar",
+          "descripcion": "Docena o media docena de medialunas, para llevar.",
+          "precios": {
+            "Docena": null,
+            "Media docena": null
+          }
+        }
+      ]
+    },
+    {
+      "nombre": "Wafles",
+      "items": [
+        {
+          "nombre": "Waffle Clásico",
+          "descripcion": "Frutas de estación + miel.",
+          "precio": null
+        },
+        {
+          "nombre": "Waffle Tentación",
+          "descripcion": "Bocha de helado + salsa a elección + frutas.",
+          "precio": null,
+          "destacado": true
+        },
+        {
+          "nombre": "Waffle Mediterráneo",
+          "descripcion": "Jamón crudo + queso crema + tomate cherry + rúcula.",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "nombre": "Sándwiches",
+      "items": [
+        {
+          "nombre": "Pebete Clásico",
+          "descripcion": "Jamón y queso.",
+          "precio": null
+        },
+        {
+          "nombre": "Pan de Campo",
+          "descripcion": "Jamón + queso + tomate.",
+          "precio": null
+        },
+        {
+          "nombre": "Pan de Campo Sei Tu",
+          "descripcion": "Jamón + queso + palta.",
+          "precio": null,
+          "destacado": true
+        },
+        {
+          "nombre": "Serrano",
+          "descripcion": "Jamón crudo + queso + tomate + rúcula.",
+          "precio": null
+        },
+        {
+          "nombre": "Sándwich de Lomo",
+          "descripcion": "Lomo + queso + tomate + rúcula o lechuga.",
+          "precio": null,
+          "destacado": true
+        },
+        {
+          "nombre": "Sándwich de Ternera",
+          "descripcion": "Ternera + queso + tomate + rúcula o lechuga.",
+          "precio": null
+        },
+        {
+          "nombre": "Tostado",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "nombre": "Combos",
+      "items": [
+        {
+          "nombre": "El Sei Tu Clásico",
+          "descripcion": "Infusión + jugo de naranja + 2 medialunas o 2 tostadas con mermelada y queso crema.",
+          "precio": null
+        },
+        {
+          "nombre": "El Sei Tu Completo",
+          "descripcion": "Infusión + jugo de naranja + fetas de jamón y queso + 2 criollos.",
+          "precio": null
+        },
+        {
+          "nombre": "El Sei Tu de Campo",
+          "descripcion": "Tostadas de pan de campo + jamón + queso + queso crema + mermelada + infusión + jugo de naranja.",
+          "precio": null
+        },
+        {
+          "nombre": "El Sei Tu Dulce",
+          "descripcion": "Infusión + jugo de naranja + waffle clásico.",
+          "precio": null
+        },
+        {
+          "nombre": "El Sei Tu Fit",
+          "descripcion": "Huevo + palta + tomate cherry + mix de frutos secos + infusión.",
+          "precio": null
+        },
+        {
+          "nombre": "El Sei Tu Avocado",
+          "descripcion": "Infusión + jugo de naranja + tostón de palta.",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "nombre": "Brunch Sei Tu",
+      "items": [
+        {
+          "nombre": "Brunch Sei Tu a tu Manera",
+          "descripcion": "Jugo natural grande o licuado + sándwich a elección.",
+          "precio": null
+        },
+        {
+          "nombre": "El Gran Sei Tu",
+          "descripcion": "Tostadas + jamón + queso + queso crema + mermelada + bowl de yogur, granola y frutas + infusión (café).",
+          "precio": null,
+          "destacado": true
+        }
+      ]
+    },
+    {
+      "nombre": "Para compartir",
+      "items": [
+        {
+          "nombre": "La Merienda de Dos",
+          "descripcion": "2 licuados, jugos o infusiones + plancha de tostados (en Perico) o pan de campo (en Centro) + 1 cookie a elección + 100 g de chipa.",
+          "precio": null
+        },
+        {
+          "nombre": "El Dúo Sei Tu",
+          "descripcion": "2 licuados o cafés fríos + 2 medialunas de jamón y queso + 2 alfajores Sei Tu.",
+          "precio": null
+        }
+      ]
+    }
+  ]
+}
