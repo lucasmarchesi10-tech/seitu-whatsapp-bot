@@ -40,7 +40,9 @@ El bot usa la **API oficial de WhatsApp de Meta (Cloud API)**. Es la forma segur
 | **B. Migrar el número a la API** | El número **deja de funcionar en la app del celular**. Hay que borrar la cuenta de WhatsApp Business de ese celular antes de conectarlo. Se pierden los chats de la app. | Si no hay coexistencia y querés que el bot atienda ese número igual. |
 | **C. Número nuevo** | No tocás los números actuales. | Para probar primero, o si querés una línea separada para el bot. |
 
-**Recomendación:** empezá con el **número de prueba gratuito que da Meta** (paso 4) para ver el bot funcionando sin tocar nada. Después decidí A o B para cada local (paso 9).
+Con los caminos A y B **el número del local no cambia**: los clientes siguen escribiendo al mismo número de siempre. La diferencia es si el celular del local lo puede seguir usando (A) o no (B).
+
+**Recomendación:** empezá con el **número de prueba gratuito que da Meta** (paso 4) para ver el bot funcionando sin tocar nada. Después conectá los números de los dos locales, con coexistencia si te la ofrecen (paso 9).
 
 **Sobre la coexistencia:** Meta la ofrece para números que ya usan la app WhatsApp Business (versión actualizada, con uso reciente), y se activa escaneando un código QR desde la app durante el registro. La disponibilidad depende del país y de cómo hagas el alta: en algunos casos solo aparece a través de un proveedor oficial de WhatsApp (BSP). Al conectar el número en el paso 9, si te aparece la opción de "conectar tu app WhatsApp Business existente", usala. Si no aparece, preguntale a un proveedor oficial o usá el camino B.
 
@@ -50,7 +52,7 @@ El bot usa la **API oficial de WhatsApp de Meta (Cloud API)**. Es la forma segur
 
 ## 1. Cargar precios y medios de pago
 
-La carta que mandaste **no tiene precios**, así que están todos vacíos. Mientras un precio esté vacío, el bot **no lo dice**: contesta que alguien del equipo se lo confirma y te deriva la consulta. En cuanto cargues los precios, los responde solo.
+Los precios ya están cargados (copiados de las fotos de la carta del 22/11/2026). Cuando cambien, actualizalos acá. Si algún precio queda vacío (`null`), el bot **no lo dice**: contesta que alguien del equipo se lo confirma y te deriva la consulta.
 
 - **Carta y precios:** archivo `data/carta.json`. Buscá el producto y cambiá `null` por el número, sin `$` ni puntos:
   ```json
@@ -59,8 +61,8 @@ La carta que mandaste **no tiene precios**, así que están todos vacíos. Mient
   ```
   Ahí mismo podés agregar, quitar o renombrar productos. La carta es la misma para los dos locales.
 - **Medios de pago, envíos y locales:** archivo `data/negocio.json`.
-  - `"medios_de_pago": null` → cambialo por ejemplo por `["Efectivo", "Transferencia", "Mercado Pago", "Débito y crédito"]`.
-  - `"zona_y_costo": null` → por ejemplo `"Envíos dentro de San Salvador de Jujuy, costo según la zona"`.
+  - `"medios_de_pago"`: hoy dice que el delivery se paga con transferencia o en efectivo al recibir. Si querés que el bot también conteste cómo se paga en el local, agregalo ahí.
+  - `"zona_y_costo"`: hoy dice que el costo del envío lo pasa una persona según la dirección. Por eso, cuando preguntan cuánto sale el envío, el bot pide la dirección y te deriva la conversación.
   - Horarios y direcciones ya están cargados.
 
 Si el código está en GitHub, podés editar estos archivos desde la página de GitHub (ícono del lápiz → "Commit changes"). Vercel publica el cambio solo en un minuto.

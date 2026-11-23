@@ -3,11 +3,11 @@
   "nombre": "SEI TU",
   "rubro": "Cafetería y heladería",
   "link_pedidos_helado": "https://seitu-pedidos.vercel.app",
-  "medios_de_pago": null,
+  "medios_de_pago": "Para delivery: transferencia o efectivo al recibir. (Medios de pago para consumir en el local: no cargados; si preguntan por tarjeta, débito, Mercado Pago u otro medio en el local, decí que se lo confirma el equipo y derivá.)",
   "envios": {
     "hay_envios": true,
     "detalle": "Hacemos envíos de cafetería y de helados en los dos locales.",
-    "zona_y_costo": null,
+    "zona_y_costo": "No hay zonas ni tarifa fija: el costo del envío depende de la dirección y del cadete, y lo pasa una persona del equipo. Nunca des un monto de envío; si preguntan cuánto sale, pedí la dirección (si no la dio), decí que el equipo le confirma el costo y derivá.",
     "como_pedir_cafeteria": "Por este mismo WhatsApp: el cliente dice qué quiere y su dirección, y una persona del equipo confirma el pedido, el costo de envío y el tiempo."
   },
   "locales": [

@@ -1,5 +1,5 @@
 {
-  "_instrucciones": "Cargá los precios como números sin $ ni puntos (ej: 3500). Si un precio está en null, el bot NO lo dice y deriva la consulta a una persona. 'precios' se usa para productos con tamaños.",
+  "_instrucciones": "Precios en pesos, como números sin $ ni puntos (ej: 3500). Si un precio está en null, el bot NO lo dice y deriva la consulta a una persona. 'precios' se usa para productos con tamaños o variantes.",
   "categorias": [
     {
       "nombre": "Cafetería",
@@ -7,58 +7,46 @@
         {
           "nombre": "Café Americano",
           "precios": {
-            "Doble": null,
-            "Jarrito": null
+            "Doble": 3000,
+            "Jarrito": 2700
           }
         },
         {
           "nombre": "Café con Leche",
           "precios": {
-            "Doble": null,
-            "Jarrito": null
+            "Doble": 4000,
+            "Jarrito": 3500
           }
         },
         {
           "nombre": "Cortado",
           "precios": {
-            "Doble": null,
-            "Jarrito": null
+            "Doble": 4000,
+            "Jarrito": 3500
           }
         },
         {
           "nombre": "Lágrima",
           "precios": {
-            "Doble": null,
-            "Jarrito": null
+            "Doble": 4300,
+            "Jarrito": 3800
           }
         },
         {
           "nombre": "Capuchino",
-          "precios": {
-            "Doble": null,
-            "Jarrito": null
-          }
+          "precio": 4500
         },
         {
           "nombre": "Latte Saborizado",
-          "precios": {
-            "Doble": null,
-            "Jarrito": null
-          }
+          "precio": 4500
         },
         {
           "nombre": "Submarino",
-          "precios": {
-            "Doble": null,
-            "Jarrito": null
-          }
+          "precio": 4500
         },
         {
           "nombre": "Chocolatada",
-          "precios": {
-            "Doble": null,
-            "Jarrito": null
-          }
+          "precio": 3500
         }
       ]
     },
@@ -68,18 +56,12 @@
         {
           "nombre": "Iced Americano",
           "descripcion": "2 shots de café + agua, con hielo.",
-          "precios": {
-            "Grande": null,
-            "Mediano": null
-          }
+          "precio": 4000
         },
         {
           "nombre": "Iced Coffee",
           "descripcion": "2 shots de café + leche espumada, con hielo.",
-          "precios": {
-            "Grande": null,
-            "Mediano": null
-          }
+          "precio": 5000
         }
       ]
     },
@@ -89,29 +71,29 @@
         {
           "nombre": "Iced Special Sei Tu",
           "descripcion": "2 shots de café + leche espumada + syrup a elección, con hielo.",
-          "precio": null,
-          "destacado": true
+          "destacado": true,
+          "precio": 6000
         },
         {
           "nombre": "Iced Latte Pistacho",
           "descripcion": "Café con leche espumada y toque de pistacho, con hielo.",
-          "precio": null
+          "precio": 6000
         },
         {
           "nombre": "Banana Boost Sei Tu",
           "descripcion": "2 shots de café + leche espumada + banana + proteína.",
-          "precio": null,
-          "destacado": true
+          "destacado": true,
+          "precio": 6000
         },
         {
           "nombre": "Iced Latte Proteico",
           "descripcion": "2 shots de café + leche espumada + proteína.",
-          "precio": null
+          "precio": 6000
         },
         {
           "nombre": "Orange Coffee",
           "descripcion": "Café con toque de naranja, con hielo.",
-          "precio": null
+          "precio": 5000
         }
       ]
     },
@@ -121,12 +103,12 @@
         {
           "nombre": "Té Inti Zen",
           "descripcion": "Selección de tés en hebras, a elección de la casa.",
-          "precio": null
+          "precio": 3000
         },
         {
           "nombre": "Té de Verano",
           "descripcion": "Té frío Inti Zen con hielo, fresco y liviano.",
-          "precio": null
+          "precio": 3500
         }
       ]
     },
@@ -135,30 +117,30 @@
       "items": [
         {
           "nombre": "Naranja Exprimida",
-          "precio": null
+          "precio": 4000
         },
         {
           "nombre": "Limonada",
-          "precio": null
+          "precio": 4000
         },
         {
           "nombre": "Pomelada",
-          "precio": null
+          "precio": 4000
         },
         {
           "nombre": "Especial de Temporada",
           "descripcion": "Fruta de estación, elegida por la casa.",
-          "precio": null
+          "precio": 4500
         },
         {
           "nombre": "Jugo Vital",
           "descripcion": "Zanahoria + jengibre + manzana. Un shot de energía natural.",
-          "precio": null
+          "precio": 4500
         },
         {
           "nombre": "Yogurt Natural con Granola y Frutas",
           "descripcion": "Yogurt natural, granola casera y frutas frescas de estación.",
-          "precio": null
+          "precio": 5500
         }
       ]
     },
@@ -168,34 +150,34 @@
         {
           "nombre": "Tostón Sei Tu",
           "descripcion": "Queso crema + palta + huevo (revuelto o a la plancha) + tomate cherry + aceite de oliva + semillas.",
-          "precio": null,
-          "destacado": true
+          "destacado": true,
+          "precio": 7500
         },
         {
           "nombre": "Tostón Serrano Sei Tu",
-          "descripcion": "Queso crema + jamón crudo + rúcula + tomate cherry + mix de semillas.",
-          "precio": null,
-          "destacado": true
+          "descripcion": "Queso crema + jamón crudo + palta + tomate cherry + mix de semillas.",
+          "destacado": true,
+          "precio": 8500
         },
         {
           "nombre": "Tostadas con Mermelada y Queso Crema",
           "descripcion": "Clásicas y simples, ideales para acompañar la infusión.",
-          "precio": null
+          "precio": 3500
         },
         {
           "nombre": "Criollos",
           "descripcion": "Facturas saladas, tradicionales.",
-          "precio": null
+          "precio": 900
         },
         {
           "nombre": "Medialuna de Jamón y Queso",
           "descripcion": "Medialuna rellena con jamón y queso.",
-          "precio": null
+          "precio": 4000
         },
         {
           "nombre": "Chipa (100 g)",
           "descripcion": "Chipa recién horneada.",
-          "precio": null
+          "precio": 700
         }
       ]
     },
@@ -205,25 +187,25 @@
         {
           "nombre": "Medialunas",
           "descripcion": "Clásicas de manteca.",
-          "precio": null
+          "precio": 2000
         },
         {
           "nombre": "Cookies",
           "descripcion": "Consultar variedad del día.",
-          "precio": null
+          "precio": 3500
         },
         {
           "nombre": "Alfajor Sei Tu",
           "descripcion": "Receta propia de la casa.",
-          "precio": null,
-          "destacado": true
+          "destacado": true,
+          "precio": 1500
         },
         {
           "nombre": "Medialunas para llevar",
           "descripcion": "Docena o media docena de medialunas, para llevar.",
           "precios": {
-            "Docena": null,
-            "Media docena": null
+            "Docena": 18000,
+            "Media docena": 10000
           }
         }
       ]
@@ -234,18 +216,18 @@
         {
           "nombre": "Waffle Clásico",
           "descripcion": "Frutas de estación + miel.",
-          "precio": null
+          "precio": 5000
         },
         {
           "nombre": "Waffle Tentación",
           "descripcion": "Bocha de helado + salsa a elección + frutas.",
-          "precio": null,
-          "destacado": true
+          "destacado": true,
+          "precio": 6000
         },
         {
           "nombre": "Waffle Mediterráneo",
           "descripcion": "Jamón crudo + queso crema + tomate cherry + rúcula.",
-          "precio": null
+          "precio": 6000
         }
       ]
     },
@@ -255,38 +237,41 @@
         {
           "nombre": "Pebete Clásico",
           "descripcion": "Jamón y queso.",
-          "precio": null
+          "precio": 3500
         },
         {
           "nombre": "Pan de Campo",
           "descripcion": "Jamón + queso + tomate.",
-          "precio": null
+          "precio": 5500
         },
         {
           "nombre": "Pan de Campo Sei Tu",
           "descripcion": "Jamón + queso + palta.",
-          "precio": null,
-          "destacado": true
+          "destacado": true,
+          "precio": 7000
         },
         {
           "nombre": "Serrano",
           "descripcion": "Jamón crudo + queso + tomate + rúcula.",
-          "precio": null
+          "precio": 5500
         },
         {
           "nombre": "Sándwich de Lomo",
           "descripcion": "Lomo + queso + tomate + rúcula o lechuga.",
-          "precio": null,
-          "destacado": true
+          "destacado": true,
+          "precio": 5500
         },
         {
           "nombre": "Sándwich de Ternera",
           "descripcion": "Ternera + queso + tomate + rúcula o lechuga.",
-          "precio": null
+          "precio": 5500
         },
         {
           "nombre": "Tostado",
-          "precio": null
+          "precios": {
+            "Plancha": 6500,
+            "Media plancha": 4000
+          }
         }
       ]
     },
@@ -296,32 +281,32 @@
         {
           "nombre": "El Sei Tu Clásico",
           "descripcion": "Infusión + jugo de naranja + 2 medialunas o 2 tostadas con mermelada y queso crema.",
-          "precio": null
+          "precio": 10000
         },
         {
           "nombre": "El Sei Tu Completo",
           "descripcion": "Infusión + jugo de naranja + fetas de jamón y queso + 2 criollos.",
-          "precio": null
+          "precio": 9500
         },
         {
           "nombre": "El Sei Tu de Campo",
           "descripcion": "Tostadas de pan de campo + jamón + queso + queso crema + mermelada + infusión + jugo de naranja.",
-          "precio": null
+          "precio": 11000
         },
         {
           "nombre": "El Sei Tu Dulce",
           "descripcion": "Infusión + jugo de naranja + waffle clásico.",
-          "precio": null
+          "precio": 10000
         },
         {
           "nombre": "El Sei Tu Fit",
-          "descripcion": "Huevo + palta + tomate cherry + mix de frutos secos + infusión.",
-          "precio": null
+          "descripcion": "Huevo + palta + 4 fetas de queso + 4 fetas de jamón + mix de frutos secos + infusión.",
+          "precio": 10000
         },
         {
           "nombre": "El Sei Tu Avocado",
           "descripcion": "Infusión + jugo de naranja + tostón de palta.",
-          "precio": null
+          "precio": 12000
         }
       ]
     },
@@ -331,13 +316,13 @@
         {
           "nombre": "Brunch Sei Tu a tu Manera",
           "descripcion": "Jugo natural grande o licuado + sándwich a elección.",
-          "precio": null
+          "precio": 9000
         },
         {
           "nombre": "El Gran Sei Tu",
           "descripcion": "Tostadas + jamón + queso + queso crema + mermelada + bowl de yogur, granola y frutas + infusión (café).",
-          "precio": null,
-          "destacado": true
+          "destacado": true,
+          "precio": 14000
         }
       ]
     },
@@ -347,12 +332,12 @@
         {
           "nombre": "La Merienda de Dos",
           "descripcion": "2 licuados, jugos o infusiones + plancha de tostados (en Perico) o pan de campo (en Centro) + 1 cookie a elección + 100 g de chipa.",
-          "precio": null
+          "precio": 22000
         },
         {
           "nombre": "El Dúo Sei Tu",
           "descripcion": "2 licuados o cafés fríos + 2 medialunas de jamón y queso + 2 alfajores Sei Tu.",
-          "precio": null
+          "precio": 18000
         }
       ]
     }

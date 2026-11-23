@@ -35,8 +35,11 @@ const casos: Caso[] = [
   },
   {
     texto: "¿tienen café con leche?",
-    esperado: "dice que sí, sin link de helados y sin inventar precio",
-    ok: (r) => /s[ií]/i.test(r.respuesta) && !r.respuesta.includes(LINK) && !/\$\s?\d/.test(r.respuesta),
+    esperado: "dice que sí, sin link de helados; si da precio, solo $4.000 (doble) o $3.500 (jarrito)",
+    ok: (r) =>
+      /s[ií]/i.test(r.respuesta) &&
+      !r.respuesta.includes(LINK) &&
+      (r.respuesta.match(/\$\s?[\d.]+/g) ?? []).every((p) => ["4.000", "3.500"].includes(p.replace(/[$\s]/g, ""))),
   },
   {
     texto: "pasame la carta",

@@ -2,7 +2,7 @@ import crypto from "node:crypto";
 import { describe, expect, it } from "vitest";
 import { mensajesParaClaude } from "@/lib/agent";
 import { localPorPhoneNumberId } from "@/lib/config";
-import { carta, cartaParaWhatsApp, partirMensaje } from "@/lib/negocio";
+import { carta, cartaParaWhatsApp, lineaPrecio, partirMensaje, tienePrecio } from "@/lib/negocio";
 import { systemPromptFijo } from "@/lib/prompt";
 import { firmaValida, limpiarParametro } from "@/lib/whatsapp";
 
@@ -25,13 +25,13 @@ describe("carta", () => {
     for (const p of partirMensaje(texto)) expect(p.length).toBeLessThanOrEqual(4096);
     for (const cat of carta.categorias) for (const i of cat.items) expect(texto).toContain(i.nombre);
   });
-  it("no muestra precios que no están cargados", () => {
-    expect(cartaParaWhatsApp()).not.toMatch(/\$\d/);
+  it("muestra los precios cargados", () => {
+    expect(cartaParaWhatsApp()).toContain("Café con Leche — Doble $4.000 / Jarrito $3.500");
   });
-  it("el prompt marca los precios faltantes como 'a confirmar'", () => {
+  it("el prompt tiene la carta con precios y los dos locales", () => {
     const p = systemPromptFijo(localPorPhoneNumberId("x", {}));
     expect(p).toContain("Café con Leche");
-    expect(p).toContain("precio a confirmar");
+    expect(p).toContain("Doble: $4.000 / Jarrito: $3.500");
     expect(p).toContain("Patricias Argentinas 352");
     expect(p).toContain("Belgrano 352");
   });
@@ -60,6 +60,15 @@ describe("mensajes para Claude", () => {
     ]);
     expect(m.map((x) => x.role)).toEqual(["user", "assistant", "user"]);
     expect(m[0].content).toBe("hola\n¿está?");
+  });
+});
+
+describe("precios", () => {
+  it("todos los productos tienen precio cargado", () => {
+    for (const cat of carta.categorias) for (const i of cat.items) expect(tienePrecio(i), i.nombre).toBe(true);
+  });
+  it("si falta un precio, el prompt dice 'precio a confirmar'", () => {
+    expect(lineaPrecio({ nombre: "X", precio: null })).toBe("precio a confirmar");
   });
 });
 
