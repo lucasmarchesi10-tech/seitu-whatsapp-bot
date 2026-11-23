@@ -3,7 +3,7 @@
   "nombre": "SEI TU",
   "rubro": "Cafetería y heladería",
   "link_pedidos_helado": "https://seitu-pedidos.vercel.app",
-  "medios_de_pago": "Para delivery: transferencia o efectivo al recibir. (Medios de pago para consumir en el local: no cargados; si preguntan por tarjeta, débito, Mercado Pago u otro medio en el local, decí que se lo confirma el equipo y derivá.)",
+  "medios_de_pago": "Para delivery: efectivo o transferencia. (Medios de pago para consumir en el local: no cargados; si preguntan por tarjeta, débito, Mercado Pago u otro medio en el local, decí que se lo confirma el equipo y derivá.)",
   "envios": {
     "hay_envios": true,
     "detalle": "Hacemos envíos de cafetería y de helados en los dos locales.",

@@ -34,19 +34,23 @@
         },
         {
           "nombre": "Capuchino",
-          "precio": 4500
+          "precio": 4500,
+          "nota": "un solo tamaño"
         },
         {
           "nombre": "Latte Saborizado",
-          "precio": 4500
+          "precio": 4500,
+          "nota": "un solo tamaño"
         },
         {
           "nombre": "Submarino",
-          "precio": 4500
+          "precio": 4500,
+          "nota": "un solo tamaño"
         },
         {
           "nombre": "Chocolatada",
-          "precio": 3500
+          "precio": 3500,
+          "nota": "un solo tamaño"
         }
       ]
     },
@@ -186,7 +190,7 @@
       "items": [
         {
           "nombre": "Medialunas",
-          "descripcion": "Clásicas de manteca.",
+          "descripcion": "Clásicas de manteca. Precio por unidad.",
           "precio": 2000
         },
         {
